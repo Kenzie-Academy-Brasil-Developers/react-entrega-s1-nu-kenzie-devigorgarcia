@@ -1,0 +1,22 @@
+@import url('../../reset.css');
+@import url('../../root.css');
+
+.section_total {
+    border: 1px solid var(--grey-2);
+    padding: 1.1rem 1.5rem ;
+}
+
+.totalValue {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.value {
+    color: var(--color-primary);
+}
+
+.section_span {
+    text-align: left;
+    
+}

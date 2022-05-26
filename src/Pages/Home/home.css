@@ -1,0 +1,44 @@
+@import url('../../reset.css');
+@import url('../../root.css');
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    background-color: var(--grey-1);
+    align-items: center;
+    box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+}
+
+.titleNu {
+    color: var(--color-primary);
+}
+
+.initBtn {
+    background-color: var(--grey-2);
+    border: none;
+    padding: 0.7rem 1rem;
+    font-family: var(--typography);
+    font-size: 0.9em;
+    color: var(--grey-3);
+    line-height: 19px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.main {
+    width: 90vw;
+    margin: 1.8rem auto;
+}
+
+@media (min-width: 1024px) {
+      main {
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+    aside {
+        width: 40vw;
+    }
+}
+

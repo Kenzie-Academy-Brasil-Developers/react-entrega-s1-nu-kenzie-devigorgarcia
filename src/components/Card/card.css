@@ -1,0 +1,57 @@
+@import url('../../reset.css');
+@import url('../../root.css');
+
+.cardContainer {
+    margin-top: 1.5rem;
+    background-color: var(--grey-1);
+    padding: 1rem 1.1rem;
+    border-radius: 0.5rem;
+}
+
+.card_content {
+    display: flex;
+    margin-bottom:  0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_content h3 {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 33%;
+}
+
+.card_content span {
+    color: var(--grey-4);
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.card_content button {
+    background-color: var(--grey-2);
+    color: var(--grey-3);
+    font-size: 1rem;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;    
+}
+
+.cardContainer_span {
+    color: var(--grey-3);
+    font-size: 0.9rem;
+}
+
+.positive {
+    border-left: 4px solid var(--color-secundary);
+}
+
+.negative {
+     border-left: 4px solid red;
+}
+
+@media (min-width:1024px) {
+    .cardContainer {
+        margin-left: 3.5rem;
+    }
+}

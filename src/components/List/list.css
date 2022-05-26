@@ -1,0 +1,16 @@
+@import url('../../reset.css');
+@import url('../../root.css');
+
+aside {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+    aside{
+        margin-top: 0;
+        width: 60vw;
+    }
+   .aside_title {
+        margin-left: 3.7rem;
+    }
+}

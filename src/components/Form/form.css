@@ -1,0 +1,73 @@
+@import url('../../reset.css');
+@import url('../../root.css');
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.6rem;
+    padding: 2rem 1rem;
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 0.8rem 1rem;
+    box-sizing: border-box;
+    background-color: var(--grey-1);
+    border: 2px solid var(--grey-1);
+    border-radius: 0.5rem;
+    font-family: var(--caption);
+    font-size: 0.8rem;
+    margin: 0.8rem 0 0.25rem 0;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;    
+}
+
+.inputContainer label {
+    width: 50%;
+}
+
+select {
+    margin: 0.8rem 0 0.25rem 0;
+    padding: 0.8rem 1rem;
+    background-color: var(--grey-1);
+    border: 2px solid var(--grey-1);
+    border-radius: 0.5rem;
+}
+
+.submitBtn{
+    padding: 1rem 0;
+    background-color: var(--color-primary);
+    color: white;
+    font-family: var(--caption);
+    font-size: 1rem;
+    line-height: 1.2rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 0.5rem;
+    margin-top: 1.8rem;
+}
+
+@media (min-width: 1024px) {
+    form {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1281px) {
+    form {
+        width: 30vw;
+    }
+}
