@@ -27,7 +27,6 @@ function List({ listTransactions }) {
 	function filterAll() {
 		setFilterTransactions(listTransactions);
 	}
-
 	return (
 		<aside>
 			<div className="aside_header">

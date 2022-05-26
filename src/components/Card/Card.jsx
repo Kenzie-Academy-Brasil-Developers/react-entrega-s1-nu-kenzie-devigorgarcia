@@ -2,6 +2,7 @@ import './card.css'
 import { FiTrash2 } from "react-icons/fi"
 
 function Card({ description, value, type }) {
+		
 	if(value > 0) {
 		return (
 			<div className='cardContainer positive' >
@@ -19,7 +20,7 @@ function Card({ description, value, type }) {
 				<div className="card_content">
 					<h3>{description}</h3>
 					<span>R$ {value}</span>
-					<button>
+					<button  >
 						<FiTrash2 />
 					</button>
 				</div>

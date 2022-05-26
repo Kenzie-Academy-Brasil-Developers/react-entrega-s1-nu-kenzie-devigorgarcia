@@ -7,6 +7,7 @@ function Home({
 	listTransactions,
 	setListTransactions,
 }) {
+
 	return (
 		<div>
 			<header className="header">
