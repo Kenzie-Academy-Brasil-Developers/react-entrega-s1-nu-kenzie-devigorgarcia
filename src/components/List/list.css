@@ -5,12 +5,48 @@ aside {
     margin-top: 2.5rem;
 }
 
+.aside_title {
+    margin-left: 1rem;
+}
+
+.aside_filterContainer {
+    margin-top: 1rem;
+}
+
+.aside_filterContainer button{
+    margin-left: 1rem;
+    background-color: var(--grey-2);
+    border: 1.4px solid var(--grey-2);
+    padding: 15px;
+    border-radius: 8px;
+    font-family: var(--typography);
+    font-size: 0.5rem 1rem;
+    font-weight: 600;
+    color: var(--grey-3);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.aside_filterContainer button:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
 @media (min-width: 1024px) {
     aside{
         margin-top: 0;
         width: 60vw;
+        margin-left: 1rem;
     }
-   .aside_title {
-        margin-left: 3.7rem;
+
+    .aside_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   
+    .aside_filterContainer {
+        display: flex;
+        margin-top: 0;
     }
 }

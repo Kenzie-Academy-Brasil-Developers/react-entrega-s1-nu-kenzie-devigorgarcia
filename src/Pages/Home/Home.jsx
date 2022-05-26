@@ -1,4 +1,3 @@
-import Filter from "../../components/Filter/Filter";
 import Form from "../../components/Form/Form";
 import List from "../../components/List/List";
 import TotalMoney from "../../components/TotalMoney/TotalMoney";
@@ -7,12 +6,6 @@ import "./home.css";
 function Home({
 	listTransactions,
 	setListTransactions,
-	isLoggedIn,
-	setIsLoggedIn,
-	filterEntrada,
-	setFilterEntrada,
-	filterSaida,
-	setFilterSaida,
 }) {
 	return (
 		<div>
