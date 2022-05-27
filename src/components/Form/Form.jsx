@@ -4,14 +4,15 @@ import "./form.css"
 function Form({ listTrasactions, setListTransactions }) {
 	const [description, setDescription] = useState('');
 	const [value, setValue] = useState(0);
-	const [type, setType] = useState("Entrada");
+	const [type, setType] = useState("entrada");
 
 
 	function handleTransaction(event) {
-
+	
 		event.preventDefault();
 
 		if (type === "entrada") {
+			console.log('ola')
 			const transaction = {
 				description,
 				value,
@@ -29,7 +30,7 @@ function Form({ listTrasactions, setListTransactions }) {
 	}
 
 	return (
-		<form onSubmit={(event) => handleTransaction(event)}>
+		<form onSubmit={handleTransaction}>
 			<label htmlFor="">
 				Descrição
 				<input

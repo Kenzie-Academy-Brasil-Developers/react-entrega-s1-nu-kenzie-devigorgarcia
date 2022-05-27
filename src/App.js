@@ -7,7 +7,7 @@ import WelcomePage from "./Pages/WelcomePage/WelcomePage";
 function App() {
   const [listTransactions, setListTransactions] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-    
+    console.log(listTransactions)
 	function deleteTransaction(selectedTransaction) {
 		const remainTransactions = listTransactions.filter(transaction => selectedTransaction !== transaction.description && transaction)
 		setListTransactions(remainTransactions)

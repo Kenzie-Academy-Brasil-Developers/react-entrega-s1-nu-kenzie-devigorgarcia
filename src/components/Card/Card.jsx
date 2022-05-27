@@ -21,7 +21,7 @@ function Card({ description, value, type, deleteTransaction }) {
 			<div className="cardContainer negative">
 				<div className="card_content">
 					<h3>{description}</h3>
-					<span>R$ {value}</span>
+					<span>R$ {Math.abs(value)}</span>
 					<button onClick={() => deleteTransaction(description)}>
 						<FiTrash2 />
 					</button>

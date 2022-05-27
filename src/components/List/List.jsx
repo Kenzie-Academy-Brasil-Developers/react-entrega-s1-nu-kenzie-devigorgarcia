@@ -8,7 +8,7 @@ function List({ listTransactions, deleteTransaction }) {
 	function filterCashIn() {
 		const cashIn = listTransactions.filter((transaction) => {
 			console.log(transaction);
-			if (transaction.type === "Entrada") {
+			if (transaction.type === "entrada") {
 				return transaction;
 			}
 		});
