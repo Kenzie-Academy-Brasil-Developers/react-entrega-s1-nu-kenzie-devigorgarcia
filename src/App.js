@@ -7,9 +7,7 @@ import WelcomePage from "./Pages/WelcomePage/WelcomePage";
 function App() {
   const [listTransactions, setListTransactions] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-    const [filterEntrada, setFilterEntrada] = useState(listTransactions);
-	const [filterSaida, setFilterSaida] = useState(listTransactions);
-  
+    
 	return (
 		<div className="App">
 			{isLoggedIn ? (
