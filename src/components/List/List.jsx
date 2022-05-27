@@ -2,7 +2,7 @@ import { useState } from "react";
 import Card from "../Card/Card";
 import "./list.css";
 
-function List({ listTransactions }) {
+function List({ listTransactions, deleteTransaction }) {
 	const [filterTransactions, setFilterTransactions] = useState([]);
 
 	function filterCashIn() {
@@ -54,6 +54,7 @@ function List({ listTransactions }) {
 										description={description}
 										value={value}
 										type={type}
+										deleteTransaction={deleteTransaction}
 									/>
 								);
 							}
@@ -66,6 +67,7 @@ function List({ listTransactions }) {
 										description={description}
 										value={value}
 										type={type}
+										deleteTransaction={deleteTransaction}
 									/>
 								);
 							}

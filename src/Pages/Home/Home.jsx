@@ -8,9 +8,10 @@ function Home({
 	setListTransactions,
 	isLoggedIn,
 	setIsLoggedIn,
+	deleteTransaction,
 }) {
-	function handleLoggin(){
-		setIsLoggedIn(false)
+	function handleLoggin() {
+		setIsLoggedIn(false);
 	}
 	return (
 		<div>
@@ -20,7 +21,9 @@ function Home({
 						<span className="titleNu">Nu</span> Kenzie
 					</h1>
 				</div>
-				<button onClick={handleLoggin} className="initBtn">Inicio</button>
+				<button onClick={handleLoggin} className="initBtn">
+					Inicio
+				</button>
 			</header>
 			<main className="main">
 				<section className="main_section">
@@ -30,7 +33,10 @@ function Home({
 					/>
 					<TotalMoney listTransactions={listTransactions} />
 				</section>
-				<List listTransactions={listTransactions} />
+				<List
+					listTransactions={listTransactions}
+					deleteTransaction={deleteTransaction}
+				/>
 			</main>
 		</div>
 	);

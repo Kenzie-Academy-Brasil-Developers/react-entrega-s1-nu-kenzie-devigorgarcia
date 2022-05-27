@@ -1,17 +1,19 @@
 import './card.css'
 import { FiTrash2 } from "react-icons/fi"
 
-function Card({ description, value, type }) {
-		
-	if(value > 0) {
+function Card({ description, value, type, deleteTransaction }) {
+	
+	if (value > 0) {
 		return (
-			<div className='cardContainer positive' >
+			<div className="cardContainer positive">
 				<div className="card_content">
 					<h3>{description}</h3>
 					<span>R$ {value}</span>
-					<button><FiTrash2/></button>
+					<button onClick={() => deleteTransaction(description)}>
+						<FiTrash2 />
+					</button>
 				</div>
-				<span className='cardContainer_span'>{type}</span>
+				<span className="cardContainer_span">{type}</span>
 			</div>
 		);
 	} else {
@@ -20,7 +22,7 @@ function Card({ description, value, type }) {
 				<div className="card_content">
 					<h3>{description}</h3>
 					<span>R$ {value}</span>
-					<button  >
+					<button onClick={() => deleteTransaction(description)}>
 						<FiTrash2 />
 					</button>
 				</div>

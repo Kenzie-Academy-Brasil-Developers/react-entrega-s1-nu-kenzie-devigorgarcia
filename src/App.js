@@ -8,6 +8,11 @@ function App() {
   const [listTransactions, setListTransactions] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false)
     
+	function deleteTransaction(selectedTransaction) {
+		const remainTransactions = listTransactions.filter(transaction => selectedTransaction !== transaction.description && transaction)
+		setListTransactions(remainTransactions)
+	}
+
 	return (
 		<div className="App">
 			{isLoggedIn ? (
@@ -16,9 +21,13 @@ function App() {
 					setListTransactions={setListTransactions}
 					isLoggedIn={isLoggedIn}
 					setIsLoggedIn={setIsLoggedIn}
+					deleteTransaction={deleteTransaction}
 				/>
 			) : (
-				<WelcomePage isLoggedIn={isLoggedIn} setIsLoggedIn ={setIsLoggedIn}/>
+				<WelcomePage
+					isLoggedIn={isLoggedIn}
+					setIsLoggedIn={setIsLoggedIn}
+				/>
 			)}
 		</div>
 	);

@@ -11,20 +11,20 @@ function Form({ listTrasactions, setListTransactions }) {
 
 		event.preventDefault();
 
-		if(type === "Entrada") {
+		if (type === "entrada") {
 			const transaction = {
 				description,
 				value,
-				type
+				type,
 			};
-			setListTransactions([...listTrasactions, transaction])
-		} else {
+			setListTransactions([...listTrasactions, transaction]);
+		} else if (type === "saida") {
 			const transaction = {
 				description,
 				value: -value,
-				type
+				type,
 			};
-			setListTransactions([...listTrasactions, transaction])
+			setListTransactions([...listTrasactions, transaction]);
 		}
 	}
 
