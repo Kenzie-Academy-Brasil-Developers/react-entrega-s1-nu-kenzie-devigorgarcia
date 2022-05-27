@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./App.css";
 import Home from "./Pages/Home/Home";
+import WelcomePage from "./Pages/WelcomePage/WelcomePage";
 
 
 function App() {
   const [listTransactions, setListTransactions] = useState([])
-  const [isLoggedIn, setIsLoggedIn] = useState(true)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
     const [filterEntrada, setFilterEntrada] = useState(listTransactions);
 	const [filterSaida, setFilterSaida] = useState(listTransactions);
   
@@ -17,13 +18,9 @@ function App() {
 					setListTransactions={setListTransactions}
 					isLoggedIn={isLoggedIn}
 					setIsLoggedIn={setIsLoggedIn}
-					filterEntrada={filterEntrada}
-					setFilterEntrada={setFilterEntrada}
-					filterSaida={filterSaida}
-					setFilterSaida={setFilterSaida}
 				/>
 			) : (
-				<div>Olocomeu</div>
+				<WelcomePage isLoggedIn={isLoggedIn} setIsLoggedIn ={setIsLoggedIn}/>
 			)}
 		</div>
 	);

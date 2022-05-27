@@ -58,6 +58,7 @@ select {
     border: 2px solid var(--color-primary);
     border-radius: 0.5rem;
     margin-top: 1.8rem;
+    cursor: pointer;
 }
 
 @media (min-width: 1024px) {

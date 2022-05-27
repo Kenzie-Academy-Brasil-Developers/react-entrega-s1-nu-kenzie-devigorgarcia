@@ -24,6 +24,12 @@
     line-height: 19px;
     font-weight: 600;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.initBtn:hover {
+    background-color: var(--color-primary);
+    color: white;
 }
 
 .main {
